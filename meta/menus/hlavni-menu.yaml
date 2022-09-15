@@ -119,6 +119,24 @@ items:
             isExternal: '0'
         items:
             -
+                title: 'Hospodářská činnost'
+                type: static-page
+                code: ''
+                reference: rodice-verejnost-hospodarska-cinnost
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Externí odkazy'
+                type: static-page
+                code: ''
+                reference: rodice-verejnost-externi-odkazy
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
                 title: 'Dokumenty ke stažení'
                 type: cms-page
                 code: ''
