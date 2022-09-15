@@ -1,0 +1,217 @@
+url = "/"
+layout = "default"
+title = "Úvod"
+
+[blogPosts posts]
+pageNumber = "{{ :page }}"
+postsPerPage = 8
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "aktuality"
+postPage = "aktuality"
+exceptCategories = "projekty"
+
+[blogPosts projectshp]
+pageNumber = "{{ :page }}"
+categoryFilter = "projekty"
+postsPerPage = 1
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "projekty"
+postPage = "projekty"
+==
+<div id="banner" class="position-relative">
+    <picture>
+        <img src="{{ 'assets/images/banners/01.jpg'|theme }}" alt="banner" class="img-fluid">
+    </picture>
+
+    <div class="logo container-fluid position-absolute top-0 mt-5">
+        <div class="container-lg">
+            <div class="img bg-red d-inline-flex rounded-circle align-items-center justify-content-center">
+                <a href="{{ 'homepage'|page }}" class="d-block bg-white bg-yellow-hover transition"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="about w-100 position-relative overflow-hidden">
+        <svg preserveAspectRatio="none" viewBox="0 0 100 100">
+            <path d="M 0 65
+               Q 25 0, 50 50, 75 100, 100 30
+               L 100 100 L 0 100
+               Z" />
+        </svg>
+
+        <div class="container-fluid bg-yellow pt-1 pb-5 pt-sm-0 pt-xl-4">
+            <div class="container-lg pb-xl-3">
+                <p class="h1 lh-47 fstr-96 mb-3 text-blue">
+                    Základní a mateřská škola <br>
+                    Police nad Metují
+                </p>
+
+                <div class="row">
+                    <p class="col-12 mb-0 text-blue fs-17 col-xl-8">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci aliquam aspernatur beatae
+                        corporis dicta dignissimos facilis ipsam minima mollitia nobis, obcaecati officia possimus quas
+                        qui quisquam, similique totam ullam.
+                    </p>
+
+                    <p class="col-12 mb-0 mt-4 d-flex col-xl-4 align-items-xl-end justify-content-xl-end">
+                        <a href="{{ 'zs-ms-zs-police-nad-metuji-zakladni-informace'|staticPage }}" class="btn btn-red w-100 justify-content-center w-sm-auto">
+                            O naší škole
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="crossroad">
+    <div class="container-lg py-xl-3">
+        <div class="row row-cols-2 gy-5 row-cols-sm-3 row-cols-lg-5">
+            <div class="col">
+                <a href="">
+                    <p class="icon mb-0 text-center position-relative">
+                        <img src="{{ 'assets/images/icons/schedule.svg'|theme }}" alt="rozvrhy" class="of-none transition">
+                        <img src="{{ 'assets/images/icons/schedule-hover.svg'|theme }}" alt="rozvrhy" class="of-none transition position-absolute start-50 translate-middle-x opacity-0">
+                    </p>
+
+                    <p class="title text-center ff-archivo fstr-110 fs-18 mb-0 pt-2 transition">
+                        Rozvrhy
+                    </p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="icon mb-0 text-center position-relative">
+                        <img src="{{ 'assets/images/icons/substitution.svg'|theme }}" alt="suplování" class="of-none transition">
+                        <img src="{{ 'assets/images/icons/substitution-hover.svg'|theme }}" alt="suplování" class="of-none transition position-absolute start-50 translate-middle-x opacity-0">
+                    </p>
+
+                    <p class="title text-center ff-archivo fstr-110 fs-18 mb-0 pt-2 transition">
+                        Suplování
+                    </p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="icon mb-0 text-center position-relative">
+                        <img src="{{ 'assets/images/icons/calendar.svg'|theme }}" alt="kalendář akcí" class="of-none transition">
+                        <img src="{{ 'assets/images/icons/calendar-hover.svg'|theme }}" alt="kalendář akcí" class="of-none transition position-absolute start-50 translate-middle-x opacity-0">
+                    </p>
+
+                    <p class="title text-center ff-archivo fstr-110 fs-18 mb-0 pt-2 transition">
+                        Kalendář akcí
+                    </p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="icon mb-0 text-center position-relative">
+                        <img src="{{ 'assets/images/icons/cubes.svg'|theme }}" alt="školní družina" class="of-none transition">
+                        <img src="{{ 'assets/images/icons/cubes-hover.svg'|theme }}" alt="školní družina" class="of-none transition position-absolute start-50 translate-middle-x opacity-0">
+                    </p>
+
+                    <p class="title text-center ff-archivo fstr-110 fs-18 mb-0 pt-2 transition">
+                        Školní družina
+                    </p>
+                </a>
+            </div>
+
+            <div class="col">
+                <a href="">
+                    <p class="icon mb-0 text-center position-relative">
+                        <img src="{{ 'assets/images/icons/document.svg'|theme }}" alt="dokumenty ke stažení" class="of-none transition">
+                        <img src="{{ 'assets/images/icons/document-hover.svg'|theme }}" alt="dokumenty ke stažení" class="of-none transition position-absolute start-50 translate-middle-x opacity-0">
+                    </p>
+
+                    <p class="title text-center ff-archivo fstr-110 fs-18 mb-0 pt-2 transition">
+                        Dokumenty <br>
+                        ke stažení
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 bg-blue" id="news">
+    <div class="container-lg py-xl-4">
+        <h2 class="h1 mb-4 mb-xl-5 text-white d-flex align-items-baseline">
+            Naše aktuality <i class="bi bi-chevron-right fs-27 ms-3"></i>
+        </h2>
+
+        <div class="posts row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4">
+            {% component "posts" %}
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 bg-yellow" id="branches">
+    <div class="container-lg py-xl-5">
+        <h2 class="h1 mb-4 mb-xl-5 text-center">
+            Naše školy a školky
+        </h2>
+
+        <div class="branches row row-cols-1 g-4 row-cols-md-2 col-xxl-10 offset-xxl-1">
+            {% for branch in mainmenu.menuItems[1].items %}
+                <div class="branch col">
+                    <a href="{{ branch.url }}" class="d-flex justify-content-between align-items-center ff-archivo fstr-110 text-white {{ branch.viewBag.cssClass == 'zs' ? 'bg-blue' : 'bg-red' }} bg-green-hover transition">
+                        <span>
+                            {{ branch.title }}
+                        </span>
+
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5 bg-red" id="project">
+    <div class="container-lg py-xl-4">
+        <div class="projects">
+            {% component "projectshp" %}
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid py-5" id="partners">
+    <div class="container-lg pt-xl-4 pb-xl-5">
+        <div class="partners row row-cols-2 g-4 row-cols-lg-4">
+            <div class="partner partner-1 col text-center">
+                <a href="" target="_blank" class="d-block bg-black-light bg-green-hover transition"></a>
+            </div>
+
+            <div class="partner partner-2 col text-center">
+                <a href="" target="_blank" class="d-block bg-black-light bg-green-hover transition"></a>
+            </div>
+
+            <div class="partner partner-3 col text-center">
+                <a href="" target="_blank" class="d-block bg-black-light bg-green-hover transition"></a>
+            </div>
+
+            <div class="partner partner-4 col text-center">
+                <a href="" target="_blank" class="d-block bg-black-light bg-green-hover transition"></a>
+            </div>
+        </div>
+
+        <div class="d-grid gap-4 mt-5 d-md-flex gap-md-5 justify-content-md-center pt-lg-4">
+            <a href="" class="btn btn-blue">
+                Naše projekty
+            </a>
+
+            <a href="" class="btn btn-blue">
+                Dokumenty
+            </a>
+
+            <a href="" class="btn btn-blue">
+                Výroční zprávy
+            </a>
+        </div>
+    </div>
+</div>

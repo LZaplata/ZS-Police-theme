@@ -1,0 +1,17 @@
+{% for item in items %}
+    {% if not item.viewBag.isHidden %}
+        <li role="presentation" class="nav-item w-100 {{ item.viewBag.cssClass }}">
+            {% if item.url %}
+                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link ff-archivo fstr-110 py-3 px-4 d-flex align-items-center {{ loop.index is odd ? 'bg-gray' }} {{ item.isActive ? 'active text-red' : '' }} {{ item.isChildActive ? 'active text-red' : '' }}">
+                    {{ item.title }}
+
+                    {% if item.viewBag.isExternal %}
+                        <i class="bi bi-box-arrow-up-right fs-13 ms-2 text-blue-light transition"></i>
+                    {% endif %}
+                </a>
+            {% else %}
+                <span>{{ item.title }}</span>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}

@@ -1,0 +1,21 @@
+static-pages:
+    zs-ms:
+        zs-ms-zs-police-nad-metuji:
+            zs-ms-zs-police-nad-metuji-zakladni-informace: {  }
+        zs-ms-zs-bezdekov:
+            zs-ms-zs-bezdekov-zakladni-informace: {  }
+        zs-ms-ms-bezdekov-nad-metuji:
+            zs-ms-ms-bezdekov-nad-metuji-zakladni-informace: {  }
+        zs-ms-ms-ceska-metuje:
+            zs-ms-ms-ceska-metuje-zakladni-informace: {  }
+        zs-ms-ms-velke-petrovice:
+            zs-ms-ms-velke-petrovice-zakladni-informace: {  }
+        zs-ms-ms-police-nad-metuji:
+            zs-ms-ms-police-nad-metuji-zakladni-informace: {  }
+    stravovani:
+        stravovani-vnitrni-rad: {  }
+        stravovani-organizace-stravovani: {  }
+        stravovani-kategorie-stravniku: {  }
+        stravovani-spotrebni-kos: {  }
+    rodice-verejnost:
+        rodice-verejnost-gdpr: {  }

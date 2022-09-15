@@ -1,0 +1,45 @@
+{% for item in items %}
+    {% if not item.viewBag.isHidden %}
+        <li role="presentation" class="nav-item {{ item.viewBag.cssClass }}">
+            {% if item.url %}
+                <a href="{{ item.url }}" {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link ff-archivo fstr-110 {{ item.isActive ? 'active text-yellow' : '' }} {{ item.isChildActive ? 'active text-yellow' : '' }}">
+                    {{ item.title }}
+                </a>
+            {% else %}
+                <span>{{ item.title }}</span>
+            {% endif %}
+
+            {% if item.items %}
+                <div class="position-absolute ms-n4">
+                    <ul class="nav flex-column bg-white gap-2 p-4 mt-3">
+                        {% partial __SELF__ ~ "::subitems" items=item.items %}
+                    </ul>
+                </div>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}
+
+{% if this.theme.bakalari %}
+    <li class="nav-item bakalari">
+        <a href="{{ this.theme.bakalari }}" target="_blank" class="nav-link position-relative ff-archivo fstr-110 fs-11 text-uppercase d-flex">
+            <span class="icon bg-white bg-yellow-hover transition d-block"></span>
+
+            <span class="title position-absolute bottom-0 start-50 translate-middle-x text-yellow">
+                Bakaláři
+            </span>
+        </a>
+    </li>
+{% endif %}
+
+{% if this.theme.email %}
+    <li class="nav-item email">
+        <a href="{{ this.theme.email }}" target="_blank" class="nav-link position-relative ff-archivo fstr-110 fs-11 text-uppercase d-flex">
+            <span class="icon bg-white bg-yellow-hover transition d-block"></span>
+
+            <span class="title position-absolute bottom-0 start-50 translate-middle-x text-yellow">
+                E-mail
+            </span>
+        </a>
+    </li>
+{% endif %}

@@ -1,0 +1,274 @@
+items:
+    -
+        title: Aktuality
+        nesting: null
+        type: cms-page
+        url: null
+        code: aktuality
+        reference: aktuality
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ZŠ a MŠ'
+        nesting: null
+        type: url
+        url: '#zs-ms'
+        code: zs-ms
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'ZŠ Police nad Metují'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: zs
+                    isExternal: '0'
+            -
+                title: 'ZŠ Bezděkov nad Metují'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-zs-bezdekov-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: zs
+                    isExternal: '0'
+            -
+                title: 'MŠ Bezděkov nad Metují'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-ms-bezdekov-nad-metuji-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'MŠ Česká Metuje'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-ms-ceska-metuje-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'MŠ Velké Petrovice'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-ms-velke-petrovice-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'MŠ Police nad Metují'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: zs-ms-ms-police-nad-metuji-zakladni-informace
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: 'Rodiče a veřejnost'
+        nesting: null
+        type: url
+        url: '#rodice-verejnost'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: 'Dokumenty ke stažení'
+                type: cms-page
+                code: ''
+                reference: dokumenty
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: GDPR
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: rodice-verejnost-gdpr
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Stravování
+        nesting: null
+        type: url
+        url: '#stravovani'
+        code: stravovani
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+        items:
+            -
+                title: Jídelníček
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: jidelnicek
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Objednání stravy'
+                nesting: null
+                type: url
+                url: 'https://www.strava.cz/Strava/Stravnik/Prihlaseni?zarizeni=0190'
+                code: ''
+                reference: null
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '1'
+            -
+                title: 'Vnitřní řád ŠJ'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: stravovani-vnitrni-rad
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Organizace stravování'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: stravovani-organizace-stravovani
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Kategorie strávníků'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: stravovani-kategorie-stravniku
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Velikost porcí pro strávníky'
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: velikost-porci
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Ceník
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: cenik
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Spotřební koš'
+                nesting: 0
+                type: static-page
+                url: null
+                code: ''
+                reference: stravovani-spotrebni-kos
+                cmsPage: null
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+    -
+        title: Kontakty
+        nesting: null
+        type: url
+        url: '#kontakty'
+        code: kontakty
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Hlavní menu'

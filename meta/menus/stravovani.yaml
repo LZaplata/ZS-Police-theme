@@ -1,0 +1,102 @@
+items:
+    -
+        title: Jídelníček
+        type: cms-page
+        code: ''
+        reference: jidelnicek
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Objednání stravy'
+        nesting: null
+        type: url
+        url: 'https://www.strava.cz/Strava/Stravnik/Prihlaseni?zarizeni=0190'
+        code: ''
+        reference: null
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '1'
+    -
+        title: 'Vnitřní řád ŠJ'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: stravovani-vnitrni-rad
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Organizace stravování'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: stravovani-organizace-stravovani
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Kategorie strávníků'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: stravovani-kategorie-stravniku
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Velikost porcí pro strávníky'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: velikost-porci
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Ceník
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: cenik
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Spotřební koš'
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: stravovani-spotrebni-kos
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: Stravování

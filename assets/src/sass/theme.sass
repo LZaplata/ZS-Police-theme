@@ -1,0 +1,348 @@
+@import "custom"
+
+.btn
+    font-stretch: map-get($font-widths, 110)
+    display: inline-flex
+    align-items: baseline
+    justify-content: center
+
+    &:after
+        content: "\F285"
+        font-family: bootstrap-icons
+        position: relative
+        margin-left: .6rem
+        font-size: var(--bs-font-size-13)
+
+    &.btn-red
+        --bs-btn-color: var(--bs-white)
+        --bs-btn-hover-color: var(--bs-white)
+        --bs-btn-hover-bg: var(--bs-green)
+        --bs-btn-hover-border-color: var(--bs-green)
+
+    &.btn-blue
+        --bs-btn-color: var(--bs-white)
+        --bs-btn-hover-color: var(--bs-white)
+        --bs-btn-hover-bg: var(--bs-green)
+        --bs-btn-hover-border-color: var(--bs-green)
+
+.border-20
+    --bs-border-width: 20px
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4
+    font-stretch: map-get($font-widths, 96)
+
+header
+    z-index: 1
+
+    .logo
+        a
+            mask-image: url("../images/logo-white.png")
+            mask-size: cover
+            width: 137px
+            height: 45px
+
+    .nav
+        & > li
+            &:hover
+                & > div
+                    max-height: 500px
+
+            &.bakalari, &.email
+                a
+                    .icon
+                        mask-image: url("../images/icons/bakalari.svg")
+                        mask-size: cover
+                        width: 31px
+                        height: 35px
+
+                        &:hover
+                            & + .title
+                                max-height: 15px
+                                display: block
+
+                    .title
+                        margin-bottom: -20px
+                        max-height: 0
+                        overflow: hidden
+                        transition: $transition-base
+                        width: max-content
+
+            &.email
+                a
+                    .icon
+                        mask-image: url("../images/icons/envelope.svg")
+                        width: 28px
+                        height: 21px
+
+                    .title
+                        margin-bottom: -27px
+
+            & > div
+                max-height: 0
+                overflow: hidden
+                transition: $transition-base
+
+                ul
+                    li
+                        a
+                            --bs-nav-link-color: var(--bs-blue)
+                            --bs-nav-link-hover-color: var(--bs-green)
+
+.offcanvas
+    .nav
+        li
+            a
+                img
+                    height: 50px
+
+                    &.email
+                        height: 35px
+                        margin-top: calc((50px - 35px) / 2)
+
+#banner
+    picture
+        img
+            @include media-breakpoint-down(md)
+                height: 400px
+                object-fit: cover
+
+    .logo
+        .img
+            width: 200px
+            height: 200px
+
+            @include media-breakpoint-up(lg)
+                width: 270px
+                height: 270px
+
+            a
+                mask-image: url("../images/logo-white-vertical.png")
+                mask-size: cover
+                height: 109px
+                width: 90px
+
+                @include media-breakpoint-up(lg)
+                    height: 130px
+                    width: 107px
+
+    .about
+        margin-top: -87px
+
+        @include media-breakpoint-up(md)
+            margin-top: -95px
+
+        @include media-breakpoint-up(lg)
+            margin-top: -113px
+
+        @include media-breakpoint-up(xl)
+            margin-top: -170px
+
+        @include media-breakpoint-up(xxl)
+            margin-top: -215px
+
+        svg
+            height: 80px
+            margin-bottom: -2px
+            width: 300%
+            left: -75%
+            position: relative
+
+            @include media-breakpoint-up(xl)
+                width: 100%
+                left: 0
+
+            path
+                fill: var(--bs-yellow)
+
+#crossroad
+    .row
+        .col
+            a
+                .icon
+                    img
+                        height: 100px
+
+                &:hover
+                    .icon
+                        img
+                            opacity: 0
+
+                            &.opacity-0
+                                opacity: 1 !important
+
+.posts
+    .post
+        a
+            &:hover
+                .img
+                    border-color: var(--bs-green) !important
+
+                h3
+                    color: var(--bs-green) !important
+
+#branches
+    .branches
+        .branch
+            a
+                border-radius: 4rem
+                padding: 25px 35px
+                font-size: var(--bs-font-size-17)
+
+                @include media-breakpoint-up(md)
+                    padding: 40px 50px
+
+                @include media-breakpoint-up(lg)
+                    font-size: var(--bs-font-size-22)
+
+.projects
+    .project
+        a
+            &:hover
+                .h1
+                    color: var(--bs-green) !important
+
+#partners
+    .partners
+        .partner
+            a
+                mask-size: contain
+                mask-repeat: no-repeat
+                mask-position: center
+                height: 88px
+                width: 100%
+
+                @include media-breakpoint-up(sm)
+                    height: 150px
+
+                @include media-breakpoint-only(lg)
+                    height: 125px
+
+            @for $i from 1 through 4
+                &.partner-#{$i}
+                    a
+                        mask-image: url("../images/partners/0#{$i}.svg")
+
+#gallery
+    .col
+        span
+            --bs-bg-opacity: .90 !important
+
+#footer
+    .row
+        .col
+            .title
+                &:after
+                    content: ""
+                    position: absolute
+                    left: 0
+                    bottom: 0
+                    width: 20px
+                    height: 2px
+                    background: var(--bs-yellow)
+
+#copyright
+    .logo
+        a
+            mask-image: url("../images/logo-white.png")
+            mask-size: cover
+            height: 40px
+            width: 124px
+
+    .signature
+        a
+            mask-image: url("../images/signature.svg")
+            mask-size: cover
+            height: 25px
+            width: 85px
+
+#static-page
+    .content
+        p
+            margin-bottom: map-get($spacers, 4)
+
+        h2, h3, h4
+            margin-top: map-get($spacers, 5)
+            margin-bottom: map-get($spacers, 2)
+
+        h2
+            font-size: $h3-font-size
+            line-height: map-get($line-heights, 27)
+
+            & + h3
+                margin-top: map-get($spacers, 4)
+
+        h3
+            font-size: $h4-font-size
+            line-height: map-get($line-heights, 24)
+
+        a
+            transition: $transition-base
+
+        table
+            margin-bottom: 0
+
+            thead
+                th
+                    font-size: $h3-font-size
+                    font-weight: map-get($font-weights, "bold-760")
+                    font-family: $font-family-archivo
+                    font-stretch: map-get($font-widths, 96)
+                    color: map-get($theme-colors, "blue")
+                    line-height: map-get($line-heights, 27)
+                    padding-top: 0
+                    padding-right: 1rem !important
+                    white-space: nowrap
+
+            tbody
+                th
+                    font-size: $h4-font-size
+                    font-weight: map-get($font-weights, "bold-760")
+                    font-family: $font-family-archivo
+                    font-stretch: map-get($font-widths, 96)
+                    line-height: map-get($line-heights, 24)
+
+            & + table
+                margin-top: map-get($spacers, 5)
+
+        ul
+            list-style: none
+            padding-left: 0
+
+            li
+                position: relative
+
+                & + li
+                    margin-top: 7px
+
+            &:not(.list-unstyled)
+                li
+                    position: relative
+                    padding-left: 1rem
+
+                    &:before
+                        content: "\2022"
+                        color: var(--bs-blue)
+                        display: inline-block
+                        font-weight: var(--bs-font-weight-bold)
+                        position: absolute
+                        left: 0
+                        top: -1px
+
+        ol
+            padding-left: 1rem
+
+            li
+                padding-left: 3px
+
+                & + li
+                    margin-top: 7px
+
+    .nav
+        li
+            a
+                --bs-nav-link-color: var(--bs-blue)
+                --bs-nav-link-hover-color: var(--bs-green)
+
+                &:hover
+                    i
+                        color: var(--bs-green) !important

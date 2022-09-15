@@ -1,0 +1,24 @@
+items:
+    -
+        title: 'Dokumenty ke stažení'
+        type: cms-page
+        code: ''
+        reference: dokumenty
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: GDPR
+        nesting: 0
+        type: static-page
+        url: null
+        code: ''
+        reference: rodice-verejnost-gdpr
+        cmsPage: null
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'Rodiče a veřejnost'

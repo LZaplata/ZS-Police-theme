@@ -1,0 +1,45 @@
+{% for item in items %}
+    {% if not item.viewBag.isHidden %}
+        <li class="nav-item {{ item.viewBag.cssClass }}">
+            {% if item.url %}
+                <a href="{{ item.url }}" {{ item.url starts with '#' ? 'data-bs-toggle="collapse"' }} {{ item.viewBag.isExternal ? 'target="_blank"' }} class="nav-link ff-archivo fstr-110 text-center fss-22 {{ item.isActive ? 'active text-yellow' : '' }} {{ item.isChildActive ? 'active text-yellow' : '' }}">
+                    {{ item.title }}
+                </a>
+            {% else %}
+                <span>{{ item.title }}</span>
+            {% endif %}
+
+            {% if item.items %}
+                <div class="collapse" id="{{ item.code }}">
+                    <ul class="nav flex-column gap-3 mt-3">
+                        {% partial __SELF__ ~ "::subitems" items=item.items %}
+                    </ul>
+                </div>
+            {% endif %}
+        </li>
+    {% endif %}
+{% endfor %}
+
+{% if this.theme.bakalari or this.theme.email %}
+    <li class="nav-item d-flex gap-5 justify-content-center">
+        {% if this.theme.bakalari %}
+            <a href="{{ this.theme.bakalari }}" target="_blank" class="nav-item ff-archivo fstr-110 d-inline-flex justify-content-center flex-column text-white text-decoration-none text-uppercase fss-13">
+                <img src="{{ 'assets/images/icons/bakalari.svg'|theme }}" alt="Bakaláři">
+
+                <span class="mt-2 text-center">
+                    Bakaláři
+                </span>
+            </a>
+        {% endif %}
+
+       {% if this.theme.email %}
+            <a href="{{ this.theme.email }}" target="_blank" class="nav-item ff-archivo fstr-110 d-inline-flex justify-content-center flex-column text-white text-decoration-none text-uppercase fss-13">
+                <img src="{{ 'assets/images/icons/envelope.svg'|theme }}" alt="E-mail" class="email">
+
+                <span class="mt-auto text-center">
+                    e-mail
+                </span>
+            </a>
+        {% endif %}
+    </li>
+{% endif %}

@@ -1,0 +1,22 @@
+name: 'ZŠ Police'
+description: 'Theme for elementary school from Police nad Metují.'
+author: 'Lukáš Záplata'
+homepage: ''
+authorCode: LZaplata
+code: zspolice
+parent: ''
+database: '0'
+require:
+    - lzaplata.extensions
+    - lzaplata.files
+    - initbiz.seostorm
+    - rainlab.pages
+    - rainlab.blog
+form:
+    fields:
+        bakalari:
+            label: Bakaláři
+            span: left
+        email:
+            label: E-mail
+            span: right

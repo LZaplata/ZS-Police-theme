@@ -1,0 +1,23 @@
+{% set posts = __SELF__.posts %}
+
+{% for post in posts %}
+    {% set image = post.featured_images.first %}
+
+    <div class="post col">
+        <a href="{{ post.url }}">
+            <p class="img mb-3 border-top border-yellow border-20 transition">
+                <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
+            </p>
+
+            <h3 class="text-white mb-2 lhs-27 transition">
+                {{ post.title }}
+            </h3>
+
+            <p class="mb-0 text-uppercase text-yellow">
+                {% for category in post.categories %}
+                    {{ category.name }}
+                {% endfor %}
+            </p>
+        </a>
+    </div>
+{% endfor %}

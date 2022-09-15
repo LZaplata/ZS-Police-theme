@@ -1,0 +1,13 @@
+items:
+    -
+        title: 'Základní informace'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'ZŠ Police nad Metují'

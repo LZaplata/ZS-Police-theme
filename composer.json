@@ -1,0 +1,8 @@
+{
+    "name": "lzaplata/zspolice-theme",
+    "type": "october-theme",
+    "description": "Theme for elementary school from Police nad Metuj\u00ed.",
+    "require": {
+        "composer/installers": "~1.0"
+    }
+}

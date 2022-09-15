@@ -1,0 +1,254 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@96,760;110,600;110,650&family=Inter:wght@400;600&display=swap');
+
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "~bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+$enable-negative-margins:       true;
+
+$theme-colors: (
+    "blue":                     #4177f0,
+    "blue-light":               #a3caff,
+    "red":                      #ff776b,
+    "yellow":                   #f8dd74,
+    "green":                    #91e0a4,
+    "black":                    #000000,
+    "black-light":              #1d1d1b,
+    "white":                    #ffffff,
+    "gray":                     #f2f4f4,
+);
+
+$font-sizes: (
+    11:                         0.6875rem,
+    13:                         .8125rem,
+    14:                         0.875rem,
+    15:                         0.9375rem,
+    17:                         1.0625rem,
+    18:                         1.125rem,
+    22:                         1.375rem,
+    27:                         1.6875rem,
+    31:                         1.9375rem,
+    39:                         2.4375rem,
+);
+
+$font-weights: (
+    "regular":                  400,
+    "semibold":                 600,
+    "semibold-650":             650,
+    "bold-760":                 760,
+);
+
+$font-widths: (
+    110:                        110%,
+    96:                         96%,
+);
+
+$line-heights: (
+    19:                         1.1875rem,
+    21:                         1.3125rem,
+    22:                         1.375rem,
+    24:                         1.5rem,
+    25:                         1.5625rem,
+    27:                         1.6875rem,
+    30:                         1.875rem,
+    31:                         1.9375rem,
+    37:                         2.3125rem,
+    47:                         2.9375rem,
+);
+
+$link-decoration:               none;
+$link-hover-color:              map-get($theme-colors, "green");
+
+$font-family-archivo:           "Archivo", sans-serif;
+$font-family-inter:             "Inter", sans-serif;
+$font-family-base:              $font-family-inter;
+$font-size-base:                map-get($font-sizes, 15);
+$font-weight-base:              map-get($font-weights, "regular");
+$font-weight-bold:              map-get($font-weights, "semibold");
+
+$headings-font-family:          $font-family-archivo;
+$headings-color:                map-get($theme-colors, "blue");
+$headings-font-weight:          map-get($font-weights, "bold-760");
+
+$h1-font-size:                  map-get($font-sizes, 39);
+$h2-font-size:                  map-get($font-sizes, 31);
+$h3-font-size:                  map-get($font-sizes, 22);
+$h4-font-size:                  map-get($font-sizes, 18);
+
+$body-color:                    map-get($theme-colors, "black-light");
+
+$btn-font-size:                 map-get($font-sizes, 18);
+$btn-border-radius:             3rem;
+$btn-font-weight:               map-get($font-weights, "semibold");
+$btn-focus-width:               0;
+$btn-border-width:              1px;
+$btn-padding-x:                 2.5rem;
+$btn-padding-y:                 1rem;
+$btn-line-height:               map-get($line-heights, 21);
+
+//$btn-close-focus-shadow:        none;
+
+$nav-link-color:                map-get($theme-colors, "white");
+$nav-link-hover-color:          map-get($theme-colors, "yellow");
+$nav-link-font-size:            map-get($font-sizes, 15);
+$nav-link-font-weight:          map-get($font-weights, "semibold-650");
+$nav-link-padding-x:            0;
+$nav-link-padding-y:            0;
+
+$offcanvas-bg-color:            map-get($theme-colors, "blue");
+$offcanvas-color:               map-get($theme-colors, "white");
+
+$table-cell-padding-x:          0;
+$table-cell-padding-y:          1rem;
+$table-border-color:            map-get($theme-colors, "blue-light");
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "~bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+$utilities:
+(
+    "font-size": (
+        property: font-size,
+        class: fs,
+        values: $font-sizes,
+        rfs: true,
+    ),
+    "font-size-static": (
+        property: font-size,
+        class: fss,
+        values: $font-sizes,
+    ),
+    "font-weight": (
+        property: font-weight,
+        class: fw,
+        values: $font-weights,
+    ),
+    "font-family": (
+        property: font-family,
+        class: ff,
+        values: (
+            "archivo": $font-family-archivo,
+            "oswald": $font-family-inter,
+        ),
+    ),
+    "font-width": (
+        property: font-stretch,
+        class: fstr,
+        values: $font-widths,
+    ),
+    "line-height": (
+        property: line-height,
+        class: lh,
+        values: $line-heights,
+        rfs: true,
+    ),
+    "line-height-static": (
+        property: line-height,
+        class: lhs,
+        values: $line-heights,
+    ),
+    "background-color-hover": (
+        property: background-color,
+        class: bg,
+        values: map-loop($theme-colors, rgba-css-var, "$key", "bg"),
+        local-vars: (
+            bg-opacity: 1,
+        ),
+        state: hover,
+    ),
+    "color-hover": (
+        property: color,
+        class: text,
+        values: $theme-colors,
+        state: hover,
+    ),
+    "height": (
+        property: height,
+        class: h,
+        values: (
+            25: 25%,
+            50: 50%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        ),
+        responsive: true,
+    ),
+    "width": (
+        property: width,
+        class: w,
+        values: (
+            25: 25%,
+            50: 50%,
+            58: 58%,
+            65: 65%,
+            75: 75%,
+            100: 100%,
+            auto: auto
+        ),
+        responsive: true,
+    ),
+    "object-fit": (
+        property: object-fit,
+        class: of,
+        values: (
+            cover: cover,
+            contain: contain,
+            none: none,
+        ),
+        responsive: true,
+    ),
+    "transition": (
+        property: transition,
+        class: transition,
+        values: (
+            null: all var(--bs-transition-duration) var(--bs-transition-function)
+        ),
+        local-vars: (
+            transition-property: all,
+            transition-duration: .2s,
+            transition-function: ease-in-out
+        ),
+    ),
+);
+
+// 5. Include remainder of required parts
+@import "~bootstrap/scss/maps";
+@import "~bootstrap/scss/mixins";
+@import "~bootstrap/scss/root";
+
+// 6. Optionally include any other parts as needed
+@import "~bootstrap/scss/utilities";
+@import "~bootstrap/scss/reboot";
+@import "~bootstrap/scss/type";
+@import "~bootstrap/scss/images";
+@import "~bootstrap/scss/containers";
+@import "~bootstrap/scss/grid";
+@import "~bootstrap/scss/helpers";
+@import "~bootstrap/scss/buttons";
+@import "~bootstrap/scss/nav";
+@import "~bootstrap/scss/offcanvas";
+@import "~bootstrap/scss/close";
+@import "~bootstrap/scss/forms";
+@import "~bootstrap/scss/alert";
+@import "~bootstrap/scss/transitions";
+@import "~bootstrap/scss/tables";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+@import "~bootstrap/scss/utilities/api";
+
+// 8. Add additional custom code here
+:root {
+    @each $size, $value in $font-sizes {
+        --#{$prefix}font-size-#{$size}: #{$value};
+    }
+
+    @each $weight, $value in $font-weights {
+        --#{$prefix}font-weight-#{$weight}: #{$value};
+    }
+
+    @each $color, $value in $theme-colors {
+        --#{$prefix}#{$color}: #{$value};
+    }
+};

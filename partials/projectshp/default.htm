@@ -1,0 +1,28 @@
+{% set posts = __SELF__.posts %}
+
+{% for post in posts %}
+    {% set image = post.featured_images.first %}
+
+    <div class="project">
+        <a href="{{ post.url }}" class="row g-lg-5">
+            <div class="col-12 col-md-5">
+                <p class="d-md-flex h-md-100 mb-0">
+                    <img src="{{ image.thumb(762, 453, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid of-md-cover">
+                </p>
+            </div>
+
+            <div class="col-12 mt-3 col-md-7 mt-md-0 mt-lg-5 d-md-flex align-items-md-center">
+                <div>
+                    <p class="h1 mb-3 transition">
+                        Projekt: <br>
+                        {{ post.title }}
+                    </p>
+
+                    <p class="text-white mb-0">
+                        {{ post.excerpt|raw }}
+                    </p>
+                </div>
+            </div>
+        </a>
+    </div>
+{% endfor %}

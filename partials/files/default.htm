@@ -1,0 +1,23 @@
+{% set files = __SELF__.category.files %}
+
+{% if files %}
+    {% set types = {
+        "application/pdf": "pdf"
+    } %}
+
+    <ul>
+        {% for file in files %}
+            <li>
+                <a href="{{ file.file.path }}" target="_blank">
+                    {{ file.name }}
+                </a>
+
+                {% if file.description %}
+                    - {{ file.description }}
+                {% endif %}
+
+                 ({{ file.file.file_size|filesize }}, {{ types[file.file.content_type] }})
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
