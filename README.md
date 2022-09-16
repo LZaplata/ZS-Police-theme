@@ -1,6 +1,6 @@
 # After theme installation
 
-[//]: # (1. Copy `app` directory from the theme into the project root directory.)
+1. Copy `app` directory from the theme into the project root directory.
 
 2. Change browserSync proxy to your project url in `webpack.mix.js`.
 

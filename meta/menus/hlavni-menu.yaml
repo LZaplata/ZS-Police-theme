@@ -119,28 +119,103 @@ items:
             isExternal: '0'
         items:
             -
-                title: 'Hospodářská činnost'
+                title: 'Obecné informace'
+                nesting: 0
                 type: static-page
                 code: ''
+                reference: rodice-verejnost-obecne-informace
+                replace: 0
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: Fotogalerie
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: fotogalerie
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Školní družina'
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: druzina
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Naše projekty'
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: projekty
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Školská rada'
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: skolska-rada
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Hospodářská činnost'
+                nesting: null
+                type: static-page
+                url: null
+                code: ''
                 reference: rodice-verejnost-hospodarska-cinnost
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'Externí odkazy'
+                nesting: null
                 type: static-page
+                url: null
                 code: ''
                 reference: rodice-verejnost-externi-odkazy
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'Dokumenty ke stažení'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ''
                 reference: dokumenty
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''

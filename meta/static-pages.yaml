@@ -18,6 +18,7 @@ static-pages:
         stravovani-kategorie-stravniku: {  }
         stravovani-spotrebni-kos: {  }
     rodice-verejnost:
+        rodice-verejnost-obecne-informace: {  }
         rodice-verejnost-hospodarska-cinnost: {  }
         rodice-verejnost-externi-odkazy: {  }
         rodice-verejnost-gdpr: {  }
