@@ -1,9 +1,9 @@
 items:
     -
-        title: test
-        type: url
-        url: /
+        title: Kontakt
+        type: cms-page
         code: ''
+        reference: kontakt
         viewBag:
             isHidden: '0'
             cssClass: ''

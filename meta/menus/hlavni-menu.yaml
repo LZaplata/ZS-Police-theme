@@ -122,8 +122,10 @@ items:
                 title: 'Obecné informace'
                 nesting: 0
                 type: static-page
+                url: null
                 code: ''
                 reference: rodice-verejnost-obecne-informace
+                cmsPage: null
                 replace: 0
                 viewBag:
                     isHidden: '0'
@@ -364,4 +366,14 @@ items:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
+        items:
+            -
+                title: Kontakt
+                type: cms-page
+                code: ''
+                reference: kontakt
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
 name: 'Hlavní menu'

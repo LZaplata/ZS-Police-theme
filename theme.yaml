@@ -12,6 +12,7 @@ require:
     - initbiz.seostorm
     - rainlab.pages
     - rainlab.blog
+    - janvince.smallcontactform
 form:
     fields:
         bakalari:
