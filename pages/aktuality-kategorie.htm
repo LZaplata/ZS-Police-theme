@@ -1,9 +1,10 @@
-url = "/aktuality/:page?"
+url = "/aktuality/kategorie/:slug/:page?"
 layout = "default"
-title = "Aktuality"
+title = "Kategorie aktualit"
 
 [blogPosts posts]
 pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at desc"
@@ -14,12 +15,19 @@ exceptCategories = "projekty"
 [staticMenu sidemenu]
 code = "aktuality"
 ==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "aktuality";
+}
+?>
+==
 <div class="container-fluid py-5" id="static-page">
     <div class="container-lg py-xl-5">
         <div class="row g-4 g-xxl-5">
             <div class="col-12 col-xl">
                 <h1 class="mb-5">
-                    Naše aktuality
+                    {{ category.name }}
                 </h1>
 
                 {% component "posts" %}

@@ -1,2 +1,105 @@
-items: {  }
+items:
+    -
+        title: 'Z ředitelství'
+        nesting: 0
+        type: blog-category
+        code: z-reditelstvi
+        reference: '4'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Školní jídelna'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '5'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ZŠ Police nad Metují'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '2'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ZŠ Bezděkov nad Metují'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '6'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Bezděkov nad Metují'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '7'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Česká Metuje'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '8'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Velké Petrovice'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '9'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Police nad Metují'
+        nesting: 0
+        type: blog-category
+        url: null
+        code: ''
+        reference: '10'
+        cmsPage: aktuality-kategorie
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
 name: Aktuality

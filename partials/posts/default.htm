@@ -1,23 +1,53 @@
 {% set posts = __SELF__.posts %}
 
-{% for post in posts %}
-    {% set image = post.featured_images.first %}
+<div class="posts row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3">
+    {% for post in posts %}
+        {% set image = post.featured_images.first %}
 
-    <div class="post col">
-        <a href="{{ post.url }}">
-            <p class="img mb-3 border-top border-yellow border-20 transition">
-                <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
-            </p>
+        <div class="post col">
+            <a href="{{ post.url }}">
+                <p class="img mb-3 border-top border-yellow border-20 transition">
+                    <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
+                </p>
 
-            <h3 class="text-white mb-2 lhs-27 transition">
-                {{ post.title }}
-            </h3>
+                <h3 class="text-blue mb-2 lhs-27 transition">
+                    {{ post.title }}
+                </h3>
 
-            <p class="mb-0 text-uppercase text-yellow">
-                {% for category in post.categories %}
-                    {{ category.name }}
-                {% endfor %}
-            </p>
-        </a>
-    </div>
-{% endfor %}
+                <p class="mb-0 text-uppercase text-red">
+                    {% for category in post.categories %}
+                        {{ category.name }}
+                    {% endfor %}
+                </p>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+
+{% if posts.lastPage > 1 %}
+    <ul class="pagination mt-5 d-flex justify-content-center align-items-center">
+        {% if posts.currentPage > 1 %}
+            <li class="page-item prev">
+                <a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): (posts.currentPage-1) }) }}" class="page-link fs-22 p-0 border border-1 border-blue rounded-circle d-inline-flex align-items-center justify-content-center bg-green-hover text-white-hover">
+                    <i class="bi bi-arrow-left-short"></i>
+                </a>
+            </li>
+        {% endif %}
+
+        {% for page in 1..posts.lastPage %}
+            <li class="page-item">
+                <a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): page }) }}" class="page-link {{ posts.currentPage == page ? 'active' : null }}">
+                    {{ page }}
+                </a>
+            </li>
+        {% endfor %}
+
+        {% if posts.lastPage > posts.currentPage %}
+            <li class="page-item next">
+                <a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): (posts.currentPage+1) }) }}" class="page-link fs-22 p-0 border border-1 border-blue rounded-circle d-inline-flex align-items-center justify-content-center bg-green-hover text-white-hover">
+                    <i class="bi bi-arrow-right-short"></i>
+                </a>
+            </li>
+        {% endif %}
+    </ul>
+{% endif %}

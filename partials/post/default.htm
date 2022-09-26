@@ -1,0 +1,21 @@
+{% set post = __SELF__.post %}
+
+<h1 class="mb-2">
+    {{ post.title }}
+</h1>
+
+<p class="fw-semibold text-blue-light">
+    {{ post.published_at|date("j. n. Y") }}
+</p>
+
+{% if post.featured_images|length %}
+    {% set image = post.featured_images.first %}
+
+    <div class="img mb-4">
+        <img src="{{ image.path }}" alt="{{ image.description }}" class="img-fluid w-100">
+    </div>
+{% endif %}
+
+<div class="content">
+    {{ post.content|raw }}
+</div>

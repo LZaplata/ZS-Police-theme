@@ -111,6 +111,14 @@ $input-focus-border-color:          map-get($theme-colors, "white");
 $input-focus-box-shadow:            none;
 $form-check-input-focus-box-shadow: none;
 
+$pagination-border-width:       0;
+$pagination-hover-color:        map-get($theme-colors, "green");
+$pagination-hover-bg:           none;
+$pagination-focus-bg:           none;
+$pagination-focus-box-shadow:   none;
+$pagination-active-bg:          none;
+$pagination-active-color:       map-get($theme-colors, "red");
+
 // 3. Include remainder of required Bootstrap stylesheets
 @import "~bootstrap/scss/variables";
 
@@ -138,7 +146,7 @@ $utilities:
         class: ff,
         values: (
             "archivo": $font-family-archivo,
-            "oswald": $font-family-inter,
+            "inter": $font-family-inter,
         ),
     ),
     "font-width": (
@@ -243,6 +251,7 @@ $utilities:
 @import "~bootstrap/scss/alert";
 @import "~bootstrap/scss/transitions";
 @import "~bootstrap/scss/tables";
+@import "~bootstrap/scss/pagination";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "~bootstrap/scss/utilities/api";

@@ -1,13 +1,9 @@
 items:
     -
         title: Aktuality
-        nesting: null
         type: cms-page
-        url: null
         code: aktuality
         reference: aktuality
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -369,9 +365,13 @@ items:
         items:
             -
                 title: Kontakt
+                nesting: null
                 type: cms-page
+                url: null
                 code: ''
                 reference: kontakt
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''

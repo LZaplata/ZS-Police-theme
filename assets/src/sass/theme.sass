@@ -434,3 +434,21 @@ header
                     opacity: 1
                     height: auto
                     display: none
+
+.pagination
+    .page-item
+        &.next, &.prev
+            .page-link
+                width: 30px
+                height: 30px
+
+                &:hover
+                    border-color: var(--bs-green) !important
+
+        &.next
+            .page-link
+                margin-left: .75rem
+
+        &.prev
+            .page-link
+                margin-right: .75rem

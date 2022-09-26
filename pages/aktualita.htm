@@ -1,0 +1,29 @@
+url = "/aktuality/clanek/:slug"
+layout = "default"
+title = "Aktualita"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "aktuality-kategorie"
+
+[staticMenu sidemenu]
+code = "aktuality"
+==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "aktuality";
+}
+?>
+==
+<div class="container-fluid py-5" id="static-page">
+    <div class="container-lg py-xl-5">
+        <div class="row g-4 g-xxl-5">
+            <div class="col-12 col-xl">
+                {% component "post" %}
+            </div>
+
+            {% component "sidemenu" %}
+        </div>
+    </div>
+</div>
