@@ -3,9 +3,42 @@ items:
         title: 'Základní informace'
         nesting: 0
         type: static-page
+        url: null
         code: ''
         reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+        cmsPage: null
         replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Rozvrhy
+        type: cms-page
+        code: ''
+        reference: rozvrhy
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Suplování
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: suplovani
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Kalendář akcí'
+        type: cms-page
+        code: ''
+        reference: kalendar-akci
         viewBag:
             isHidden: '0'
             cssClass: ''
