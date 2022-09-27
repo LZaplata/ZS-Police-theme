@@ -1,6 +1,15 @@
-url = "/rodice-verejnost/nase-projekty"
+url = "/rodice-verejnost/nase-projekty/:page?"
 layout = "default"
 title = "Naše projekty"
+
+[blogPosts projects]
+pageNumber = "{{ :page }}"
+categoryFilter = "projekty"
+postsPerPage = 12
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "projekty"
+postPage = "projekt"
 
 [staticMenu sidemenu]
 code = "rodice-verejnost"
@@ -13,9 +22,7 @@ code = "rodice-verejnost"
                     {{ this.page.title }}
                 </h1>
 
-                <div class="content">
-
-                </div>
+                {% component "projects" %}
             </div>
 
             {% component "sidemenu" %}

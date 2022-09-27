@@ -3,8 +3,10 @@ items:
         title: 'Obecné informace'
         nesting: 0
         type: static-page
+        url: null
         code: ''
         reference: rodice-verejnost-obecne-informace
+        cmsPage: null
         replace: 0
         viewBag:
             isHidden: '0'
@@ -38,13 +40,9 @@ items:
             isExternal: '0'
     -
         title: 'Naše projekty'
-        nesting: null
         type: cms-page
-        url: null
-        code: ''
+        code: nase-projekty
         reference: projekty
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

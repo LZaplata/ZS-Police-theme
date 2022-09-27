@@ -1,0 +1,29 @@
+url = "/rodice-verejnost/nase-projekty/projekt/:slug"
+layout = "default"
+title = "Projekt"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "projekty"
+
+[staticMenu sidemenu]
+code = "rodice-verejnost"
+==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "nase-projekty";
+}
+?>
+==
+<div class="container-fluid py-5" id="static-page">
+    <div class="container-lg py-xl-5">
+        <div class="row g-4 g-xxl-5">
+            <div class="col-12 col-xl">
+                {% component "post" %}
+            </div>
+
+            {% component "sidemenu" %}
+        </div>
+    </div>
+</div>

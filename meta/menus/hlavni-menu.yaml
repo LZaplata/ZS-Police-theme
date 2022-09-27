@@ -106,13 +106,9 @@ items:
                     isExternal: '0'
     -
         title: 'Rodiče a veřejnost'
-        nesting: null
         type: url
         url: '#rodice-verejnost'
-        code: ''
-        reference: null
-        cmsPage: null
-        replace: null
+        code: rodice-verejnost
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -159,13 +155,9 @@ items:
                     isExternal: '0'
             -
                 title: 'Naše projekty'
-                nesting: null
                 type: cms-page
-                url: null
-                code: ''
+                code: nase-projekty
                 reference: projekty
-                cmsPage: null
-                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -264,9 +256,13 @@ items:
                     isExternal: '0'
             -
                 title: 'Objednání stravy'
+                nesting: null
                 type: url
                 url: 'https://aplikace.strava.cz/auth/prihlaseni-jidelna?Zarizeni=0190'
                 code: ''
+                reference: null
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
