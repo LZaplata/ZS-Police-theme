@@ -1,22 +1,22 @@
 items:
     -
         title: Jídelníček
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: jidelnicek
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Objednání stravy'
-        nesting: null
         type: url
-        url: 'https://www.strava.cz/Strava/Stravnik/Prihlaseni?zarizeni=0190'
+        url: 'https://aplikace.strava.cz/auth/prihlaseni-jidelna?Zarizeni=0190'
         code: ''
-        reference: null
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
