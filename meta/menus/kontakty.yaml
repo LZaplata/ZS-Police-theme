@@ -1,9 +1,22 @@
 items:
     -
         title: Kontakt
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: kontakt
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Vedení a administrativa'
+        type: cms-page
+        code: ''
+        reference: vedeni-administrativa
         viewBag:
             isHidden: '0'
             cssClass: ''

@@ -1,0 +1,37 @@
+<div class="col">
+    <div class="bg-gray rounded-4 text-blue py-3 px-4">
+        <p class="mb-0 text-uppercase fw-semibold">
+            {{ contact.title }}
+        </p>
+
+        {% if contact.job %}
+            <p class="mb-0 fw-semibold">
+                {{ contact.job }}
+            </p>
+        {% endif %}
+
+        {% if contact.phone %}
+            <p class="mb-0">
+                <a href="tel: {{ contact.phone }}">
+                    {{ contact.phone}}
+                </a>
+            </p>
+        {% endif %}
+
+        {% if contact.mobile %}
+            <p class="mb-0">
+                <a href="tel: {{ contact.mobile }}">
+                    {{ contact.mobile}}
+                </a>
+            </p>
+        {% endif %}
+
+        {% if contact.email %}
+            <p class="mb-0">
+                <a href="mailto:{{ contact.email }}">
+                    {{ contact.email }}
+                </a>
+            </p>
+        {% endif %}
+    </div>
+</div>

@@ -106,9 +106,13 @@ items:
                     isExternal: '0'
     -
         title: 'Rodiče a veřejnost'
+        nesting: null
         type: url
         url: '#rodice-verejnost'
         code: rodice-verejnost
+        reference: null
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -155,9 +159,13 @@ items:
                     isExternal: '0'
             -
                 title: 'Naše projekty'
+                nesting: null
                 type: cms-page
+                url: null
                 code: nase-projekty
                 reference: projekty
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -368,6 +376,15 @@ items:
                 reference: kontakt
                 cmsPage: null
                 replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'Vedení a administrativa'
+                type: cms-page
+                code: ''
+                reference: vedeni-administrativa
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
