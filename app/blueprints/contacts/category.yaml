@@ -1,0 +1,14 @@
+uuid: ec937c45-bf28-47ed-8e37-2baf4449a9ff
+handle: Contacts\Category
+type: structure
+name: Kategorie
+
+structure:
+    maxDepth: 2
+
+navigation:
+    icon: icon-sitemap
+    parent: Contacts\Contact
+    order: 20
+
+fields:

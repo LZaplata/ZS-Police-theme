@@ -1,0 +1,63 @@
+uuid: 21977980-6fb9-4f85-8541-3bd3ec01bb34
+handle: Contacts\Contact
+type: structure
+name: Kontakty
+
+structure:
+    maxDepth: 1
+
+primaryNavigation:
+    label: Kontakty
+    icon: icon-address-book-o
+    order: 130
+
+navigation:
+    icon: icon-user
+    parent: Contacts\Contact
+    order: 10
+    
+fields:
+    categories:
+        label: Zařazení
+        type: entries
+        source: Contacts\Category
+        span: left
+        commentAbove: Pokud budete zařazovat učitele do podkategorie školy (např. 1. stupeň), zaškrtněte jak kategori1 1. stupeň, tak nadřazenou kategorii školy.
+    class_teacher:
+        label: Třídnictví
+        type: switch
+        span: right
+        column: false
+        scope: false
+    class:
+        label: Třída
+        span: right
+        trigger:
+            action: show
+            field: class_teacher
+            condition: checked
+    job:
+        label: Funkce
+        span: right
+        trigger:
+            action: hide
+            field: class_teacher
+            condition: checked
+    cabinet:
+        label: Kabinet
+        span: left
+    position:
+        label: Umístění
+        span: right
+    phone:
+        label: Telefon
+        span: left
+    mobile:
+        label: Mobil
+        span: right
+    email:
+        label: E-mail
+        span: left
+        type: text
+        column: true
+        scope: true
