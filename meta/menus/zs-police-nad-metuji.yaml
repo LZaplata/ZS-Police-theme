@@ -3,10 +3,8 @@ items:
         title: 'Základní informace'
         nesting: 0
         type: static-page
-        url: null
-        code: ''
+        code: zakladni-informace
         reference: zs-ms-zs-police-nad-metuji-zakladni-informace
-        cmsPage: null
         replace: 0
         viewBag:
             isHidden: '0'
@@ -14,9 +12,13 @@ items:
             isExternal: '0'
     -
         title: Rozvrhy
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: rozvrhy
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -36,9 +38,13 @@ items:
             isExternal: '0'
     -
         title: 'Kalendář akcí'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: kalendar-akci
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

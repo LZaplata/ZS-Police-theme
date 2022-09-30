@@ -1,0 +1,13 @@
+{% set items = [] %}
+
+{% for item in __SELF__.menuItems %}
+    {% if item.title != this.page.title %}
+        {% set items = items|merge([item]) %}
+    {% endif %}
+{% endfor %}
+
+{% if items %}
+    <ul class="nav flex-column">
+        {% partial __SELF__ ~ "::items" items=items %}
+    </ul>
+{% endif %}

@@ -5,6 +5,13 @@ url = "/zs-ms/zs-police-nad-metuji/rozvrhy"
 [staticMenu sidemenu]
 code = "zs-police-nad-metuji"
 ==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "zs-police-nad-metuji";
+}
+?>
+==
 <div class="container-fluid py-5" id="static-page">
     <div class="container-lg py-xl-5">
         <div class="row g-4 g-xxl-5">
@@ -12,6 +19,8 @@ code = "zs-police-nad-metuji"
                 <h1 class="mb-5">
                     {{ this.page.title }}
                 </h1>
+
+                {% partial "submenu" code="zs-police-nad-metuji" %}
 
                 <div class="content">
                     <iframe

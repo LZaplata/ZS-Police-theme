@@ -10,7 +10,7 @@
             {% endif %}
 
             {% if item.items %}
-                <div class="collapse" id="{{ item.code }}">
+                <div class="collapse {{ item.isActive or item.isChildActive ? 'show' }}" id="{{ item.code }}">
                     <ul class="nav flex-column gap-3 mt-3">
                         {% partial __SELF__ ~ "::subitems" items=item.items %}
                     </ul>

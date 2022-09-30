@@ -1,0 +1,23 @@
+[staticMenu submenu]
+==
+{% set submenu_pages = ["zs-police-nad-metuji"] %}
+
+{% if code in submenu_pages %}
+    <div class="mb-5 d-xl-none">
+        <div class="accordion">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <button data-bs-target="#submenu" data-bs-toggle="collapse" class="accordion-button collapsed ff-archivo fstr-110 fw-semibold-650">
+                        {{ this.page.title }}
+                    </button>
+                </div>
+
+                <div class="accordion-collapse collapse" id="submenu">
+                    <div class="accordion-body">
+                        {% component "submenu" code=code %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endif %}
