@@ -14,9 +14,22 @@ items:
             isExternal: '0'
     -
         title: 'Vedení a administrativa'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: vedeni-administrativa
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ZŠ Police nad Metují'
+        type: cms-page
+        code: ''
+        reference: zs-police-nad-metuji
         viewBag:
             isHidden: '0'
             cssClass: ''

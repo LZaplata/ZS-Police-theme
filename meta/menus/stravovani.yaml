@@ -14,9 +14,13 @@ items:
             isExternal: '0'
     -
         title: 'Objednání stravy'
+        nesting: null
         type: url
         url: 'https://aplikace.strava.cz/auth/prihlaseni-jidelna?Zarizeni=0190'
         code: ''
+        reference: null
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -95,6 +99,15 @@ items:
         reference: stravovani-spotrebni-kos
         cmsPage: null
         replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Kontakt
+        type: cms-page
+        code: ''
+        reference: stravovani-kontakt
         viewBag:
             isHidden: '0'
             cssClass: ''

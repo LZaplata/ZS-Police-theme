@@ -30,8 +30,10 @@ items:
                 title: 'ZŠ Police nad Metují'
                 nesting: 0
                 type: static-page
+                url: null
                 code: zs-police-nad-metuji
                 reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+                cmsPage: null
                 replace: 0
                 viewBag:
                     isHidden: '0'
@@ -351,6 +353,15 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+            -
+                title: Kontakt
+                type: cms-page
+                code: ''
+                reference: stravovani-kontakt
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
     -
         title: Kontakty
         nesting: null
@@ -385,6 +396,19 @@ items:
                 url: null
                 code: ''
                 reference: vedeni-administrativa
+                cmsPage: null
+                replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'ZŠ Police nad Metují'
+                nesting: null
+                type: cms-page
+                url: null
+                code: ''
+                reference: zs-police-nad-metuji
                 cmsPage: null
                 replace: null
                 viewBag:
