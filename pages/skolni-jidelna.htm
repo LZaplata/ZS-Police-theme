@@ -1,11 +1,14 @@
-title = "Kontakt"
+title = "ŠJ Police nad Metují"
 layout = "default"
-url = "/stravovani/kontakt"
+url = "/kontaky/sj-police-nad-metuji"
 
 [staticMenu sidemenu]
-code = "stravovani"
+code = "kontakty"
 
 [contactForm contactform]
+
+[collection contacts]
+handle = "Contacts\Contact"
 ==
 <div id="static-page">
     <div class="container-fluid py-5">
@@ -36,12 +39,13 @@ code = "stravovani"
 
                             <div class="col mt-5 order-1 order-sm-2">
                                 <h2 class="mt-0">
-                                    Vedoucí školní jídelny
+                                    Bankovní spojení
                                 </h2>
 
-                                <div class="d-grid gap-3">
-                                    <p class="mb-0 bg-blue text-white py-3 px-4 rounded-5 d-flex align-items-center">
-                                        <i class="bi bi-person fs-18 me-2 text-yellow transition"></i> Martina Rudolfová
+                                <div class="bg-blue text-white py-3 px-4 rounded-4">
+                                    <p class="mb-0">
+                                        <span class="fw-semibold">Číslo účtu:</span> 35-6120120207/0100 <br>
+                                        <span class="fw-semibold">VS:</span> číslo sdělí vedoucí ŠJ
                                     </p>
                                 </div>
                             </div>
@@ -73,6 +77,18 @@ code = "stravovani"
                                     </a>
                                 </div>
                             </div>
+                        </div>
+
+                        <h2>
+                            Kontakty
+                        </h2>
+
+                        <div class="row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3">
+                            {% set contacts = contacts.whereRelation("categories", "slug", "sj-police-nad-metuji").get() %}
+
+                            {% for contact in contacts %}
+                                {% partial "contact/default" contact=contact %}
+                            {% endfor %}
                         </div>
                     </div>
                 </div>

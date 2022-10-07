@@ -353,19 +353,6 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-            -
-                title: Kontakt
-                nesting: null
-                type: cms-page
-                url: null
-                code: ''
-                reference: stravovani-kontakt
-                cmsPage: null
-                replace: null
-                viewBag:
-                    isHidden: '0'
-                    cssClass: ''
-                    isExternal: '0'
     -
         title: Kontakty
         nesting: null
@@ -415,6 +402,15 @@ items:
                 reference: zs-police-nad-metuji
                 cmsPage: null
                 replace: null
+                viewBag:
+                    isHidden: '0'
+                    cssClass: ''
+                    isExternal: '0'
+            -
+                title: 'ŠJ Police nad Metují'
+                type: cms-page
+                code: ''
+                reference: skolni-jidelna
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -473,9 +469,13 @@ items:
                     isExternal: '0'
             -
                 title: 'MŠ Police nad Metují'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ''
                 reference: ms-police-nad-metuji
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
