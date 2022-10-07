@@ -1,0 +1,50 @@
+title = "ZŠ Police nad Metují"
+layout = "default"
+url = "/kontakty/zs-police-nad-metuji"
+
+[staticMenu sidemenu]
+code = "kontakty"
+
+[contactForm contactform]
+
+[collection contacts]
+handle = "Contacts\Contact"
+
+[collection categories]
+handle = "Contacts\Category"
+==
+<div id="static-page">
+    <div class="container-fluid py-5">
+        <div class="container-lg py-xl-5">
+            <div class="row g-4 g-xxl-5">
+                <div class="col-12 col-xl">
+                    <h1 class="mb-5">
+                        {{ this.page.title }}
+                    </h1>
+
+                    <div class="content">
+                        {% set parent_category = categories.where("slug", "zs-police-nad-metuji").first() %}
+
+                        {% for category in parent_category.children %}
+                            <h2>
+                                {{ category.title }}
+                            </h2>
+
+                            <div class="row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3">
+                                {% set category_contacts = contacts.whereRelation("categories", "slug", category.slug).get() %}
+
+                                {% for contact in category_contacts %}
+                                    {% partial "contact/default" contact=contact %}
+                                {% endfor %}
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                {% component "sidemenu" %}
+            </div>
+        </div>
+    </div>
+
+    {% partial "contact-form" %}
+</div>

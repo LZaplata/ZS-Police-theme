@@ -10,10 +10,28 @@
             </p>
         {% endif %}
 
+        {% if contact.class_teacher %}
+            <p class="mb-0 fw-semibold">
+                třídnictví {{ contact.class }}
+            </p>
+        {% endif %}
+
+        {% if contact.cabinet %}
+            <p class="mb-0">
+                kabinet - {{ contact.cabinet }}
+            </p>
+        {% endif %}
+
+        {% if contact.position %}
+            <p class="mb-0">
+                umístění - {{ contact.position }}
+            </p>
+        {% endif %}
+
         {% if contact.phone %}
             <p class="mb-0">
                 <a href="tel: {{ contact.phone }}">
-                    {{ contact.phone}}
+                    {{ contact.phone }}
                 </a>
             </p>
         {% endif %}
@@ -21,7 +39,7 @@
         {% if contact.mobile %}
             <p class="mb-0">
                 <a href="tel: {{ contact.mobile }}">
-                    {{ contact.mobile}}
+                    {{ contact.mobile }}
                 </a>
             </p>
         {% endif %}

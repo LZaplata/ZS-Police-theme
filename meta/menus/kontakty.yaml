@@ -27,9 +27,74 @@ items:
             isExternal: '0'
     -
         title: 'ZŠ Police nad Metují'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: zs-police-nad-metuji
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'ZŠ Bezděkov nad Metují'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: zs-bezdekov-nad-metuji
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Bezděkov nad Metují'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: ms-bezdekov-nad-metuji
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Česká Metuje'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: ms-ceska-metuje
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Velké Petrovice'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: ms-velke-petrovice
+        cmsPage: null
+        replace: null
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'MŠ Police nad Metují'
+        type: cms-page
+        code: ''
+        reference: ms-police-nad-metuji
         viewBag:
             isHidden: '0'
             cssClass: ''
