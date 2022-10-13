@@ -24,12 +24,23 @@
     {{ post.content|raw }}
 </div>
 
-<div class="mt-4 row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3">
+<div class="mt-4 row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3" id="gallery">
     {% set images = post.featured_images.skip(1) %}
 
     {% for img in images %}
-        <div class="col">
-            <img src="{{ img.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ img.description }}" class="img-fluid w-100">
-        </div>
+        <a href="{{ img.path }}" title="{{ img.description }}" class="col">
+            <img src="{{ img.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ img.title }}" class="img-fluid w-100">
+        </a>
     {% endfor %}
 </div>
+
+
+
+{% put scripts %}
+    <script>
+        lightGallery(document.getElementById("gallery"), {
+            plugins: [lgZoom, lgThumbnail],
+            speed: 500,
+        });
+    </script>
+{% endput %}
