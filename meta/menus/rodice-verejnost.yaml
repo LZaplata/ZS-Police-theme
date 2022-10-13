@@ -40,22 +40,22 @@ items:
             isExternal: '0'
     -
         title: 'Naše projekty'
+        nesting: null
         type: cms-page
+        url: null
         code: nase-projekty
         reference: projekty
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Školská rada'
-        nesting: null
         type: cms-page
-        url: null
-        code: ''
+        code: skolska-rada
         reference: skolska-rada
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

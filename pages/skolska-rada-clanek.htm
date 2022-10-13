@@ -1,0 +1,29 @@
+url = "/rodice-verejnost/skolska-rada/clanek/:slug"
+layout = "default"
+title = "Článek školské rady"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "skolska-rada"
+
+[staticMenu sidemenu]
+code = "rodice-verejnost"
+==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "skolska-rada";
+}
+?>
+==
+<div class="container-fluid py-5" id="static-page">
+    <div class="container-lg py-xl-5">
+        <div class="row g-4 g-xxl-5">
+            <div class="col-12 col-xl">
+                {% component "post" %}
+            </div>
+
+            {% component "sidemenu" %}
+        </div>
+    </div>
+</div>
