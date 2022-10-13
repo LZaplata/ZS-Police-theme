@@ -1,9 +1,12 @@
-title = "Fotogalerie"
-layout = "default"
 url = "/rodice-verejnost/fotogalerie"
+layout = "default"
+title = "Fotogalerie"
 
 [staticMenu sidemenu]
 code = "rodice-verejnost"
+
+[Gallery gallery]
+gallery = "fotogalerie"
 ==
 <div class="container-fluid py-5" id="static-page">
     <div class="container-lg py-xl-5">
@@ -13,9 +16,7 @@ code = "rodice-verejnost"
                     {{ this.page.title }}
                 </h1>
 
-                <div class="content">
-
-                </div>
+                {% component "gallery" %}
             </div>
 
             {% component "sidemenu" %}

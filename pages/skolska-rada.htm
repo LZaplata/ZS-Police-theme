@@ -1,9 +1,18 @@
-title = "Školská rada"
+url = "/rodice-verejnost/skolska-rada/:page?"
 layout = "default"
-url = "/rodice-verejnost/skolska-rada"
+title = "Školská rada"
 
 [staticMenu sidemenu]
 code = "rodice-verejnost"
+
+[blogPosts schoolboard]
+pageNumber = "{{ :page }}"
+categoryFilter = "skolska-rada"
+postsPerPage = 12
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "aktualita"
+postPage = "skolska-rada"
 ==
 <div class="container-fluid py-5" id="static-page">
     <div class="container-lg py-xl-5">
@@ -13,9 +22,7 @@ code = "rodice-verejnost"
                     {{ this.page.title }}
                 </h1>
 
-                <div class="content">
-
-                </div>
+                {% component "schoolboard" %}
             </div>
 
             {% component "sidemenu" %}
