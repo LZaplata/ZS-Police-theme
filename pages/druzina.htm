@@ -1,9 +1,18 @@
 title = "Školní družina"
 layout = "default"
-url = "/rodice-verejnost/skolni-druzina"
+url = "/rodice-verejnost/skolni-druzina/:page?"
 
 [staticMenu sidemenu]
 code = "rodice-verejnost"
+
+[blogPosts schoolclub]
+pageNumber = "{{ :page }}"
+categoryFilter = "skolni-druzina"
+postsPerPage = 12
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "druzina"
+postPage = "druzina-clanek"
 ==
 <div class="container-fluid py-5" id="static-page">
     <div class="container-lg py-xl-5">
@@ -13,9 +22,7 @@ code = "rodice-verejnost"
                     {{ this.page.title }}
                 </h1>
 
-                <div class="content">
-
-                </div>
+                {% component "schoolclub" %}
             </div>
 
             {% component "sidemenu" %}

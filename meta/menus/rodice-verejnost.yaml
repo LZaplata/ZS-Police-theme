@@ -27,13 +27,9 @@ items:
             isExternal: '0'
     -
         title: 'Školní družina'
-        nesting: null
         type: cms-page
-        url: null
-        code: ''
+        code: skolni-druzina
         reference: druzina
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -53,9 +49,13 @@ items:
             isExternal: '0'
     -
         title: 'Školská rada'
+        nesting: null
         type: cms-page
+        url: null
         code: skolska-rada
         reference: skolska-rada
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
