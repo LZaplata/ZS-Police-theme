@@ -3,9 +3,33 @@ items:
         title: 'Základní informace'
         nesting: 0
         type: static-page
+        url: null
         code: zakladni-informace
         reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+        cmsPage: null
         replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Aktuality
+        type: cms-page
+        code: ''
+        reference: aktuality-zs-police-nad-metuji
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Učitelé a kontakty'
+        nesting: null
+        type: cms-page
+        url: null
+        code: ''
+        reference: ucitele-kontakty-zs-police-nad-metuji
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
