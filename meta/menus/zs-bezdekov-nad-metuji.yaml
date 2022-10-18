@@ -1,0 +1,40 @@
+items:
+    -
+        title: 'Základní informace'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: zs-ms-zs-bezdekov-zakladni-informace
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Rozvrhy
+        type: cms-page
+        code: ''
+        reference: zs-bezdekov-nad-metuji-rozvrhy
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: Suplování
+        type: cms-page
+        code: ''
+        reference: zs-bezdekov-nad-metuji-suplovani
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Kalendář akcí'
+        type: cms-page
+        code: ''
+        reference: zs-bezdekov-nad-metuji-kalendar-akci
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+name: 'ZŠ Bezděkov nad Metují'
