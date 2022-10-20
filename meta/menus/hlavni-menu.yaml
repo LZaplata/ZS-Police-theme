@@ -30,8 +30,10 @@ items:
                 title: 'ZŠ Police nad Metují'
                 nesting: 0
                 type: static-page
+                url: null
                 code: zs-police-nad-metuji
                 reference: zs-ms-zs-police-nad-metuji-zakladni-informace
+                cmsPage: null
                 replace: 0
                 viewBag:
                     isHidden: '0'
@@ -208,14 +210,10 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'Dokumenty ke stažení'
-                nesting: null
+                title: Dokumenty
                 type: cms-page
-                url: null
                 code: ''
                 reference: dokumenty
-                cmsPage: null
-                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -405,14 +403,10 @@ items:
                     cssClass: ''
                     isExternal: '0'
             -
-                title: 'ŠJ Police nad Metují'
-                nesting: null
+                title: 'Školní jídelna'
                 type: cms-page
-                url: null
                 code: ''
                 reference: skolni-jidelna
-                cmsPage: null
-                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''

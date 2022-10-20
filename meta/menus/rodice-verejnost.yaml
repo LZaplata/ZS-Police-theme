@@ -27,9 +27,13 @@ items:
             isExternal: '0'
     -
         title: 'Školní družina'
+        nesting: null
         type: cms-page
+        url: null
         code: skolni-druzina
         reference: druzina
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
@@ -87,14 +91,10 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'Dokumenty ke stažení'
-        nesting: null
+        title: Dokumenty
         type: cms-page
-        url: null
         code: ''
         reference: dokumenty
-        cmsPage: null
-        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

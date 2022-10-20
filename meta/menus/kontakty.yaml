@@ -39,7 +39,7 @@ items:
             cssClass: ''
             isExternal: '0'
     -
-        title: 'ŠJ Police nad Metují'
+        title: 'Školní jídelna'
         type: cms-page
         code: ''
         reference: skolni-jidelna
