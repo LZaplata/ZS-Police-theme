@@ -1,18 +1,5 @@
 items:
     -
-        title: Aktuality
-        nesting: null
-        type: cms-page
-        url: null
-        code: aktuality
-        reference: aktuality
-        cmsPage: null
-        replace: null
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
         title: 'ZŠ a MŠ'
         nesting: null
         type: url
@@ -28,78 +15,54 @@ items:
         items:
             -
                 title: 'ZŠ Police nad Metují'
-                nesting: 0
-                type: static-page
-                url: null
+                type: cms-page
                 code: zs-police-nad-metuji
-                reference: zs-ms-zs-police-nad-metuji-zakladni-informace
-                cmsPage: null
-                replace: 0
+                reference: aktuality-zs-police-nad-metuji
                 viewBag:
                     isHidden: '0'
                     cssClass: zs
                     isExternal: '0'
             -
                 title: 'ZŠ Bezděkov nad Metují'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: zs-ms-zs-bezdekov-zakladni-informace
-                cmsPage: null
-                replace: 0
+                type: cms-page
+                code: zs-bezdekov-nad-metuji
+                reference: aktuality-zs-bezdekov-nad-metuji
                 viewBag:
                     isHidden: '0'
                     cssClass: zs
                     isExternal: '0'
             -
                 title: 'MŠ Bezděkov nad Metují'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: zs-ms-ms-bezdekov-nad-metuji-zakladni-informace
-                cmsPage: null
-                replace: 0
+                type: cms-page
+                code: ms-bezdekov-nad-metuji
+                reference: aktuality-ms-bezdekov-nad-metuji
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Česká Metuje'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: zs-ms-ms-ceska-metuje-zakladni-informace
-                cmsPage: null
-                replace: 0
+                type: cms-page
+                code: ms-ceska-metuje
+                reference: aktuality-ms-ceska-metuje
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Velké Petrovice'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: zs-ms-ms-velke-petrovice-zakladni-informace
-                cmsPage: null
-                replace: 0
+                type: cms-page
+                code: ms-velke-petrovice
+                reference: aktuality-ms-velke-petrovice
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Police nad Metují'
-                nesting: 0
-                type: static-page
-                url: null
-                code: ''
-                reference: zs-ms-ms-police-nad-metuji-zakladni-informace
-                cmsPage: null
-                replace: 0
+                type: cms-page
+                code: ms-police-nad-metuji
+                reference: aktuality-ms-police-nad-metuji
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -211,9 +174,13 @@ items:
                     isExternal: '0'
             -
                 title: Dokumenty
+                nesting: null
                 type: cms-page
+                url: null
                 code: ''
                 reference: dokumenty
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -404,9 +371,13 @@ items:
                     isExternal: '0'
             -
                 title: 'Školní jídelna'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ''
                 reference: skolni-jidelna
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''

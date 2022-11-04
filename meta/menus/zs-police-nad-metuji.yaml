@@ -1,18 +1,5 @@
 items:
     -
-        title: 'Základní informace'
-        nesting: 0
-        type: static-page
-        url: null
-        code: zakladni-informace
-        reference: zs-ms-zs-police-nad-metuji-zakladni-informace
-        cmsPage: null
-        replace: 0
-        viewBag:
-            isHidden: '0'
-            cssClass: ''
-            isExternal: '0'
-    -
         title: Aktuality
         type: cms-page
         code: ''

@@ -1,23 +1,23 @@
-url = "/zs-ms/zs-police-nad-metuji/aktuality/:page?"
+url = "/zs-ms/ms-ceska-metuje/aktuality/:page?"
 layout = "default"
-title = "Aktuality ZŠ Police nad Metují"
+title = "Aktuality MŠ Česká Metuje"
 
 [blogPosts posts]
 pageNumber = "{{ :page }}"
-categoryFilter = "zs-police-nad-metuji"
+categoryFilter = "ms-ceska-metuje"
 postsPerPage = 12
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at desc"
-categoryPage = "aktuality-zs-police-nad-metuji"
-postPage = "aktualita-zs-police-nad-metuji"
+categoryPage = "aktuality-ms-ceska-metuje"
+postPage = "aktualita-ms-ceska-metuje"
 
 [staticMenu sidemenu]
-code = "zs-police-nad-metuji"
+code = "ms-ceska-metuje"
 ==
 <?php
 function onInit()
 {
-    $this["activeMenuItem"] = "zs-police-nad-metuji";
+    $this["activeMenuItem"] = "ms-ceska-metuje";
 }
 ?>
 ==
@@ -27,7 +27,7 @@ function onInit()
             <div class="col-12 col-xl">
                 <h1 class="mb-5">
                     <span class="text-blue-light">
-                        ZŠ Police nad Metují
+                        MŠ Česká Metuje
                     </span><br>
 
                     Naše aktuality

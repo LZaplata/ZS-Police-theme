@@ -1,38 +1,57 @@
 items:
     -
-        title: 'Základní informace'
-        nesting: 0
-        type: static-page
+        title: Aktuality
+        type: cms-page
         code: ''
-        reference: zs-ms-zs-bezdekov-zakladni-informace
-        replace: 0
+        reference: aktuality-zs-bezdekov-nad-metuji
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
+        title: 'Učitelé a kontakty'
+        type: cms-page
+        code: ''
+        reference: ucitele-kontakty-zs-bezdekov-nad-metuji
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Rozvrhy
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: zs-bezdekov-nad-metuji-rozvrhy
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: Suplování
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: zs-bezdekov-nad-metuji-suplovani
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
             isExternal: '0'
     -
         title: 'Kalendář akcí'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: zs-bezdekov-nad-metuji-kalendar-akci
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

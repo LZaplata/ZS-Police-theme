@@ -1,7 +1,6 @@
 static-pages:
     zs-ms:
-        zs-ms-zs-police-nad-metuji:
-            zs-ms-zs-police-nad-metuji-zakladni-informace: {  }
+        zs-ms-zs-police-nad-metuji: {  }
         zs-ms-zs-bezdekov:
             zs-ms-zs-bezdekov-zakladni-informace: {  }
         zs-ms-ms-bezdekov-nad-metuji:
