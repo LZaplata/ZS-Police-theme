@@ -1,0 +1,37 @@
+url = "/zs-ms/ms-police-nad-metuji/aktualita/:slug"
+layout = "default"
+title = "Aktualita MŠ Police nad Metují"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "aktuality-ms-police-nad-metuji"
+
+[staticMenu sidemenu]
+code = "ms-police-nad-metuji"
+==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "aktuality-ms-police-nad-metuji";
+}
+?>
+==
+<div class="container-fluid py-5" id="static-page">
+    <div class="container-lg py-xl-5">
+        <div class="row g-4 g-xxl-5">
+            <div class="col-12 col-xl">
+                <h1 class="mb-2">
+                    <span class="text-blue-light">
+                        MŠ Police nad Metují
+                    </span><br>
+
+                    {{ post.title }}
+                </h1>
+
+                {% component "post" %}
+            </div>
+
+            {% component "sidemenu" %}
+        </div>
+    </div>
+</div>

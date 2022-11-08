@@ -56,9 +56,13 @@ items:
                 items:
                     -
                         title: Aktuality
+                        nesting: null
                         type: cms-page
+                        url: null
                         code: aktuality-zs-bezdekov-nad-metuji
                         reference: aktuality-zs-bezdekov-nad-metuji
+                        cmsPage: null
+                        replace: null
                         viewBag:
                             isHidden: '1'
                             cssClass: ''
@@ -79,9 +83,13 @@ items:
                 items:
                     -
                         title: Aktuality
+                        nesting: null
                         type: cms-page
+                        url: null
                         code: aktuality-ms-bezdekov-nad-metuji
                         reference: aktuality-ms-bezdekov-nad-metuji
+                        cmsPage: null
+                        replace: null
                         viewBag:
                             isHidden: '1'
                             cssClass: ''
@@ -102,9 +110,13 @@ items:
                 items:
                     -
                         title: Aktuality
+                        nesting: null
                         type: cms-page
+                        url: null
                         code: aktuality-ms-ceska-metuje
                         reference: aktuality-ms-ceska-metuje
+                        cmsPage: null
+                        replace: null
                         viewBag:
                             isHidden: '1'
                             cssClass: ''
@@ -125,9 +137,13 @@ items:
                 items:
                     -
                         title: Aktuality
+                        nesting: null
                         type: cms-page
+                        url: null
                         code: aktuality-ms-velke-petrovice
                         reference: aktuality-ms-velke-petrovice
+                        cmsPage: null
+                        replace: null
                         viewBag:
                             isHidden: '1'
                             cssClass: ''
@@ -145,6 +161,16 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: Aktuality
+                        type: cms-page
+                        code: aktuality-ms-police-nad-metuji
+                        reference: aktuality-ms-police-nad-metuji
+                        viewBag:
+                            isHidden: '1'
+                            cssClass: ''
+                            isExternal: '0'
     -
         title: 'Rodiče a veřejnost'
         nesting: null
