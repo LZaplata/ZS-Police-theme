@@ -1,0 +1,37 @@
+url = "/zs-ms/ms-ceska-metuje/aktualita/:slug"
+layout = "default"
+title = "Aktualita MŠ Česká Metuje"
+
+[blogPost post]
+slug = "{{ :slug }}"
+categoryPage = "aktuality-ms-ceska-metuje"
+
+[staticMenu sidemenu]
+code = "ms-ceska-metuje"
+==
+<?php
+function onInit()
+{
+    $this["activeMenuItem"] = "aktuality-ms-ceska-metuje";
+}
+?>
+==
+<div class="container-fluid py-5" id="static-page">
+    <div class="container-lg py-xl-5">
+        <div class="row g-4 g-xxl-5">
+            <div class="col-12 col-xl">
+                <h1 class="mb-2">
+                    <span class="text-blue-light">
+                        MŠ Česká Metuje
+                    </span><br>
+
+                    {{ post.title }}
+                </h1>
+
+                {% component "post" %}
+            </div>
+
+            {% component "sidemenu" %}
+        </div>
+    </div>
+</div>
