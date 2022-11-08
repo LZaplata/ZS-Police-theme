@@ -2,7 +2,7 @@ items:
     -
         title: Aktuality
         type: cms-page
-        code: ''
+        code: aktuality-zs-bezdekov-nad-metuji
         reference: aktuality-zs-bezdekov-nad-metuji
         viewBag:
             isHidden: '0'
@@ -10,9 +10,13 @@ items:
             isExternal: '0'
     -
         title: 'Učitelé a kontakty'
+        nesting: null
         type: cms-page
+        url: null
         code: ''
         reference: ucitele-kontakty-zs-bezdekov-nad-metuji
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''

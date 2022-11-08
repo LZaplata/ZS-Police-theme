@@ -29,9 +29,13 @@ items:
                 items:
                     -
                         title: Aktuality
+                        nesting: null
                         type: cms-page
+                        url: null
                         code: aktuality-zs-police-nad-metuji
                         reference: aktuality-zs-police-nad-metuji
+                        cmsPage: null
+                        replace: null
                         viewBag:
                             isHidden: '1'
                             cssClass: ''
@@ -49,6 +53,16 @@ items:
                     isHidden: '0'
                     cssClass: zs
                     isExternal: '0'
+                items:
+                    -
+                        title: Aktuality
+                        type: cms-page
+                        code: aktuality-zs-bezdekov-nad-metuji
+                        reference: aktuality-zs-bezdekov-nad-metuji
+                        viewBag:
+                            isHidden: '1'
+                            cssClass: ''
+                            isExternal: '0'
             -
                 title: 'MŠ Bezděkov nad Metují'
                 nesting: null
