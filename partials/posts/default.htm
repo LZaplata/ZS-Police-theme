@@ -10,15 +10,15 @@
                     <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
                 </p>
 
-                <h3 class="text-blue mb-2 lhs-27 transition">
+                <h3 class="text-blue mb-0 lhs-27 transition">
                     {{ post.title }}
                 </h3>
 
-                <p class="mb-0 text-uppercase text-red">
-                    {% for category in post.categories %}
-                        {{ category.name }}
-                    {% endfor %}
-                </p>
+{#                <p class="mb-0 text-uppercase text-red">#}
+{#                    {% for category in post.categories %}#}
+{#                        {{ category.name }}#}
+{#                    {% endfor %}#}
+{#                </p>#}
             </a>
         </div>
     {% endfor %}
@@ -34,7 +34,18 @@
             </li>
         {% endif %}
 
-        {% for page in 1..posts.lastPage %}
+        {% if posts.currentPage <= 3 %}
+            {% set startPage = 1 %}
+            {% set endPage = posts.lastPage > 5 ? 5 : posts.lastPage %}
+        {% elseif posts.currentPage > 3 and posts.currentPage + 4 < posts.lastPage %}
+            {% set startPage = posts.currentPage - 2 %}
+            {% set endPage = posts.lastPage > posts.currentPage + 2 ? posts.currentPage + 2 : posts.lastPage %}
+        {% elseif posts.currentPage + 4 >= posts.lastPage %}
+            {% set startPage = posts.lastPage - 4 %}
+            {% set endPage = posts.lastPage %}
+        {% endif %}
+
+        {% for page in startPage..endPage %}
             <li class="page-item">
                 <a href="{{ this.page.baseFileName|page({ (__SELF__.pageParam): page }) }}" class="page-link {{ posts.currentPage == page ? 'active' : null }}">
                     {{ page }}
