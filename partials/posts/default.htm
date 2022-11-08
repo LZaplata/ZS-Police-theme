@@ -7,7 +7,11 @@
         <div class="post col">
             <a href="{{ post.url }}">
                 <p class="img mb-3 border-top border-yellow border-20 transition">
-                    <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
+                    {% if image %}
+                        <img src="{{ image.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ image.description }}" class="img-fluid">
+                    {% else %}
+                        <img src="{{ 'assets/images/default.png'|theme }}" alt="{{ post.title }}" class="img-fluid">
+                    {% endif %}
                 </p>
 
                 <h3 class="text-blue mb-0 lhs-27 transition">
