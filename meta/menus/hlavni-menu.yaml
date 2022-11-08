@@ -76,6 +76,16 @@ items:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
+                items:
+                    -
+                        title: Aktuality
+                        type: cms-page
+                        code: aktuality-ms-bezdekov-nad-metuji
+                        reference: aktuality-ms-bezdekov-nad-metuji
+                        viewBag:
+                            isHidden: '1'
+                            cssClass: ''
+                            isExternal: '0'
             -
                 title: 'MŠ Česká Metuje'
                 nesting: null
