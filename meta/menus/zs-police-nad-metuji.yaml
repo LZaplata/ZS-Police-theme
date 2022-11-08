@@ -2,7 +2,7 @@ items:
     -
         title: Aktuality
         type: cms-page
-        code: ''
+        code: aktuality-zs-police-nad-metuji
         reference: aktuality-zs-police-nad-metuji
         viewBag:
             isHidden: '0'
