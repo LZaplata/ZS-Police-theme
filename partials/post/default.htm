@@ -1,9 +1,5 @@
 {% set post = __SELF__.post %}
 
-<h1 class="mb-2">
-    {{ post.title }}
-</h1>
-
 <p class="fw-semibold text-blue-light">
     {{ post.published_at|date("j. n. Y") }}
 </p>
@@ -33,8 +29,6 @@
         </a>
     {% endfor %}
 </div>
-
-
 
 {% put scripts %}
     <script>

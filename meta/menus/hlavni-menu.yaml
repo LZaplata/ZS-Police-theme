@@ -15,54 +15,88 @@ items:
         items:
             -
                 title: 'ZŠ Police nad Metují'
+                nesting: null
                 type: cms-page
+                url: null
                 code: zs-police-nad-metuji
                 reference: aktuality-zs-police-nad-metuji
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: zs
                     isExternal: '0'
+                items:
+                    -
+                        title: Aktuality
+                        type: cms-page
+                        code: aktuality-zs-police-nad-metuji
+                        reference: aktuality-zs-police-nad-metuji
+                        viewBag:
+                            isHidden: '1'
+                            cssClass: ''
+                            isExternal: '0'
             -
                 title: 'ZŠ Bezděkov nad Metují'
+                nesting: null
                 type: cms-page
+                url: null
                 code: zs-bezdekov-nad-metuji
                 reference: aktuality-zs-bezdekov-nad-metuji
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: zs
                     isExternal: '0'
             -
                 title: 'MŠ Bezděkov nad Metují'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ms-bezdekov-nad-metuji
                 reference: aktuality-ms-bezdekov-nad-metuji
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Česká Metuje'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ms-ceska-metuje
                 reference: aktuality-ms-ceska-metuje
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Velké Petrovice'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ms-velke-petrovice
                 reference: aktuality-ms-velke-petrovice
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
             -
                 title: 'MŠ Police nad Metují'
+                nesting: null
                 type: cms-page
+                url: null
                 code: ms-police-nad-metuji
                 reference: aktuality-ms-police-nad-metuji
+                cmsPage: null
+                replace: null
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
