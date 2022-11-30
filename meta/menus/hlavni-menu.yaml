@@ -69,13 +69,11 @@ items:
                             isExternal: '0'
             -
                 title: 'MŠ Bezděkov nad Metují'
-                nesting: null
-                type: cms-page
-                url: null
+                nesting: 0
+                type: static-page
                 code: ms-bezdekov-nad-metuji
-                reference: aktuality-ms-bezdekov-nad-metuji
-                cmsPage: null
-                replace: null
+                reference: zs-ms-ms-bezdekov-nad-metuji-zakladni-informace
+                replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
@@ -96,81 +94,37 @@ items:
                             isExternal: '0'
             -
                 title: 'MŠ Česká Metuje'
-                nesting: null
-                type: cms-page
-                url: null
+                nesting: 0
+                type: static-page
                 code: ms-ceska-metuje
-                reference: aktuality-ms-ceska-metuje
-                cmsPage: null
-                replace: null
+                reference: zs-ms-ms-ceska-metuje-zakladni-informace
+                replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-                items:
-                    -
-                        title: Aktuality
-                        nesting: null
-                        type: cms-page
-                        url: null
-                        code: aktuality-ms-ceska-metuje
-                        reference: aktuality-ms-ceska-metuje
-                        cmsPage: null
-                        replace: null
-                        viewBag:
-                            isHidden: '1'
-                            cssClass: ''
-                            isExternal: '0'
             -
                 title: 'MŠ Velké Petrovice'
-                nesting: null
-                type: cms-page
-                url: null
+                nesting: 0
+                type: static-page
                 code: ms-velke-petrovice
-                reference: aktuality-ms-velke-petrovice
-                cmsPage: null
-                replace: null
+                reference: zs-ms-ms-velke-petrovice-zakladni-informace
+                replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-                items:
-                    -
-                        title: Aktuality
-                        nesting: null
-                        type: cms-page
-                        url: null
-                        code: aktuality-ms-velke-petrovice
-                        reference: aktuality-ms-velke-petrovice
-                        cmsPage: null
-                        replace: null
-                        viewBag:
-                            isHidden: '1'
-                            cssClass: ''
-                            isExternal: '0'
             -
                 title: 'MŠ Police nad Metují'
-                nesting: null
-                type: cms-page
-                url: null
+                nesting: 0
+                type: static-page
                 code: ms-police-nad-metuji
-                reference: aktuality-ms-police-nad-metuji
-                cmsPage: null
-                replace: null
+                reference: zs-ms-ms-police-nad-metuji-zakladni-informace
+                replace: 0
                 viewBag:
                     isHidden: '0'
                     cssClass: ''
                     isExternal: '0'
-                items:
-                    -
-                        title: Aktuality
-                        type: cms-page
-                        code: aktuality-ms-police-nad-metuji
-                        reference: aktuality-ms-police-nad-metuji
-                        viewBag:
-                            isHidden: '1'
-                            cssClass: ''
-                            isExternal: '0'
     -
         title: 'Rodiče a veřejnost'
         nesting: null

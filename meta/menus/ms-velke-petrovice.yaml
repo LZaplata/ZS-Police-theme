@@ -1,9 +1,24 @@
 items:
     -
+        title: 'Základní informace'
+        nesting: 0
+        type: static-page
+        code: ''
+        reference: zs-ms-ms-velke-petrovice-zakladni-informace
+        replace: 0
+        viewBag:
+            isHidden: '0'
+            cssClass: ''
+            isExternal: '0'
+    -
         title: Aktuality
+        nesting: null
         type: cms-page
+        url: null
         code: aktuality-ms-velke-petrovice
         reference: aktuality-ms-velke-petrovice
+        cmsPage: null
+        replace: null
         viewBag:
             isHidden: '0'
             cssClass: ''
