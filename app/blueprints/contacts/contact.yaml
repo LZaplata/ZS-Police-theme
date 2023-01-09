@@ -27,11 +27,10 @@ fields:
         label: Třídnictví
         type: switch
         span: right
-        column: false
-        scope: false
     class:
         label: Třída
         span: right
+        type: text
         trigger:
             action: show
             field: class_teacher
@@ -39,6 +38,7 @@ fields:
     job:
         label: Funkce
         span: right
+        type: text
         trigger:
             action: hide
             field: class_teacher
@@ -46,15 +46,19 @@ fields:
     cabinet:
         label: Kabinet
         span: left
+        type: text
     position:
         label: Umístění
         span: right
+        type: text
     phone:
         label: Telefon
         span: left
+        type: text
     mobile:
         label: Mobil
         span: right
+        type: text
     email:
         label: E-mail
         span: left
