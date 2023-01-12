@@ -1,0 +1,44 @@
+{% set post = __SELF__.post %}
+
+<h1 class="mb-2">
+    {{ post.title }}
+</h1>
+
+<p class="fw-semibold text-blue-light">
+    {{ post.published_at|date("j. n. Y") }}
+</p>
+
+{% if post.featured_images|length %}
+    {% set image = post.featured_images.first %}
+
+    <div class="img mb-4">
+        <img src="{{ image.path }}" alt="{{ image.description }}" class="img-fluid w-100">
+    </div>
+{% endif %}
+
+<div class="content">
+    {% if post.excerpt %}
+        {{ post.excerpt|raw }}
+    {% endif %}
+
+    {{ post.content|raw }}
+</div>
+
+<div class="mt-4 row row-cols-1 g-4 row-cols-sm-2 row-cols-lg-3" id="gallery">
+    {% set images = post.featured_images.skip(1) %}
+
+    {% for img in images %}
+        <a href="{{ img.path }}" title="{{ img.description }}" class="col">
+            <img src="{{ img.thumb(370, 210, {"mode": "crop"}) }}" alt="{{ img.title }}" class="img-fluid w-100">
+        </a>
+    {% endfor %}
+</div>
+
+{% put scripts %}
+    <script>
+        lightGallery(document.getElementById("gallery"), {
+            plugins: [lgZoom, lgThumbnail],
+            speed: 500,
+        });
+    </script>
+{% endput %}

@@ -2,7 +2,7 @@ url = "/rodice-verejnost/skolska-rada/clanek/:slug"
 layout = "default"
 title = "Článek školské rady"
 
-[blogPost post]
+[blogPost postwithheading]
 slug = "{{ :slug }}"
 categoryPage = "skolska-rada"
 
@@ -20,7 +20,7 @@ function onInit()
     <div class="container-lg py-xl-5">
         <div class="row g-4 g-xxl-5">
             <div class="col-12 col-xl">
-                {% component "post" %}
+                {% component "postwithheading" %}
             </div>
 
             {% component "sidemenu" %}
