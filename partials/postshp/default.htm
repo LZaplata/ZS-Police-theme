@@ -2,6 +2,7 @@
 
 {% for post in posts %}
     {% set image = post.featured_images.first %}
+    {% do post.setUrl(["aktualita-", post.categories.first.slug]|join, this.controller) %}
 
     <div class="post col">
         <a href="{{ post.url }}">
