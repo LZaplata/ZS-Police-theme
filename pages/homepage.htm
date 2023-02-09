@@ -8,6 +8,7 @@ postsPerPage = 8
 noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at desc"
 categoryPage = "aktuality"
+postPage = "blog/post"
 exceptCategories = "projekty,skolska-rada,skolni-druzina"
 
 [blogPosts projectshp]
@@ -18,6 +19,15 @@ noPostsMessage = "Nenalezeny žádné příspěvky"
 sortOrder = "published_at desc"
 categoryPage = "projekty"
 postPage = "projekty"
+
+[blogPosts quicknews]
+pageNumber = "{{ :page }}"
+categoryFilter = "rychle-zpravy"
+postsPerPage = 1
+noPostsMessage = "Nenalezeny žádné příspěvky"
+sortOrder = "published_at desc"
+categoryPage = "aktualita"
+postPage = "aktualita"
 ==
 <div id="banner" class="position-relative">
     <picture>
@@ -70,6 +80,8 @@ postPage = "projekty"
         </div>
     </div>
 </div>
+
+{% component "quicknews" %}
 
 <div class="container-fluid py-5" id="crossroad">
     <div class="container-lg py-xl-3">
