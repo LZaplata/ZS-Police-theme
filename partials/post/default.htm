@@ -36,6 +36,34 @@
     </div>
 {% endif %}
 
+{% if post.files %}
+    {% set types = {
+        "application/pdf": "pdf",
+        "application/msword": "doc",
+        "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet": "xlsx"
+    } %}
+
+    <h2 class="mt-5">
+        Soubory
+    </h2>
+
+    <ul>
+        {% for file in post.files %}
+            <li>
+                <a href="{{ file.path }}" target="_blank">
+                    {{ file.title ?: file.file_name }}
+                </a>
+
+                {% if file.description %}
+                    - {{ file.description }}
+                {% endif %}
+
+                ({{ file.file_size|filesize }}, {{ types[file.content_type] }})
+            </li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
 {% put scripts %}
     <script>
         lightGallery(document.getElementById("gallery"), {

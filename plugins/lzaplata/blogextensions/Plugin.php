@@ -45,7 +45,14 @@ class Plugin extends PluginBase
     public function boot()
     {
         /**
-         * Add video textarea to Rainlab.Blog post
+         * Extend Post model
+         */
+        Post::extend(function ($model) {
+            $model->attachMany["files"] = File::class;
+        });
+
+        /**
+         * Add fields to Rainlab.Blog post
          */
         Event::listen("backend.form.extendFields", function ($widget) {
             if (!$widget->getController() instanceof Posts) {
@@ -65,7 +72,14 @@ class Plugin extends PluginBase
                     "label"     => "Youtube embed kód",
                     "tab"       => "Video",
                     "type"      => "textarea",
-                ]
+                ],
+                "files" => [
+                    "label"     => "Soubory",
+                    "tab"       => "Soubory",
+                    "type"      => "fileupload",
+                    "mode"      => "file",
+                    "fileTypes" => "pdf, doc, docx, xls, xlsx",
+                ],
             ]);
         });
     }
