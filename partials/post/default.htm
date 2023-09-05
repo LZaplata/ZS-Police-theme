@@ -30,6 +30,12 @@
     {% endfor %}
 </div>
 
+{% if post.video %}
+    <div class="mt-4 ratio ratio-16x9">
+        {{ post.video|raw }}
+    </div>
+{% endif %}
+
 {% put scripts %}
     <script>
         lightGallery(document.getElementById("gallery"), {
