@@ -36,7 +36,7 @@
     </div>
 {% endif %}
 
-{% if post.files %}
+{% if post.files|length %}
     {% set types = {
         "application/pdf": "pdf",
         "application/msword": "doc",
